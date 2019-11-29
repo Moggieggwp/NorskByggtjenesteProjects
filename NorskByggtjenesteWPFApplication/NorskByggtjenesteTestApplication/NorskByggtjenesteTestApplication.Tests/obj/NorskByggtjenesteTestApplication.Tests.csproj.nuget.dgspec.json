@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.Tests\\NorskByggtjenesteTestApplication.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.Tests\\NorskByggtjenesteTestApplication.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.Tests\\NorskByggtjenesteTestApplication.Tests.csproj",
+        "projectName": "NorskByggtjenesteTestApplication.Tests",
+        "projectPath": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.Tests\\NorskByggtjenesteTestApplication.Tests.csproj",
+        "packagesPath": "C:\\Users\\dmytr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmytr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.csproj": {
+                "projectPath": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.csproj",
+        "projectName": "NorskByggtjenesteTestApplication",
+        "projectPath": "C:\\Users\\dmytr\\source\\repos\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication\\NorskByggtjenesteTestApplication.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
