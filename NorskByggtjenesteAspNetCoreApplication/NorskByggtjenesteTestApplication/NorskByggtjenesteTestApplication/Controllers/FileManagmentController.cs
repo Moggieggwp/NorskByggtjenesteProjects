@@ -2,33 +2,42 @@
 using NorskByggtjenesteTestApplication.Services;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace NorskByggtjenesteTestApplication.Controllers
 {
+    /// <summary>
+    /// FileManagmentController controller
+    /// </summary>
     [Route("api/[controller]")]
     public class FileManagmentController : Controller
     {
-        private readonly IFileManagmentService fileManagmentService;
+        private readonly IFileManagmentService fileManagmentService; //IFileManagmentService field
 
-        public FileManagmentController(IFileManagmentService fileManagmentService)
-        {
-            this.fileManagmentService = fileManagmentService;
+        /// <summary>
+        /// Initializes the controller dependencies
+        /// </summary>
+        public FileManagmentController(IFileManagmentService fileManagmentService) //IFileManagmentService injection to controller
+        { 
+            this.fileManagmentService = fileManagmentService; //Assigning injected service to field
         }
 
+        /// <summary>
+        /// SaveFiles method that take list of written contents by user and save files to file system
+        /// </summary>
         [HttpPost("[action]")]
-        public async Task<IActionResult> SaveFiles([FromBody] IEnumerable<string> filesContents)
+        public IActionResult SaveFiles([FromBody] IEnumerable<string> filesContents)
         {
             try
             {
-                await fileManagmentService.CreateFilesFromContents(filesContents);
+                string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); //Path to Documents folder where file will be saved
+                fileManagmentService.CreateFilesFromContents(filesContents, documentsPath); //Execute CreateFiles method from fileManagmentService
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(ex.Message); //Return 400 if somethiung wrong happend
             }
 
-            return Ok();
+            return Ok(); //Return 200 when all files created
         }
     }
 }

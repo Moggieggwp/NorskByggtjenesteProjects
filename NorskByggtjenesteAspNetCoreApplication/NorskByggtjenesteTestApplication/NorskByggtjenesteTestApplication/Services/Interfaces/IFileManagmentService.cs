@@ -5,6 +5,6 @@ namespace NorskByggtjenesteTestApplication.Services
 {
     public interface IFileManagmentService
     {
-        Task CreateFilesFromContents(IEnumerable<string> listOfContents);
+        void CreateFilesFromContents(IEnumerable<string> listOfContents, string path);
     }
 }
